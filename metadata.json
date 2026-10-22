@@ -1,0 +1,6 @@
+{
+  "name": "FBISE Notes Hub",
+  "description": "Discover, preview, and download organized FBISE study notes for 9th, 10th, 1st Year, and 2nd Year, contributed by teachers with a secure teacher portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

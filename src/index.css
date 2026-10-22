@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ice-silver: #DCE5EC;
+  --color-ice-silver-light: #EEF4F8;
+  --color-ice-silver-dark: #C6D4DF;
+  --color-deep-aubergine: #301934;
+  --color-deep-aubergine-light: #48264e;
+  --color-deep-aubergine-dark: #1f0f22;
+  --color-marigold: #F4B942;
+  --color-marigold-hover: #e5a72f;
+  --color-marigold-light: #fef3dc;
+  --color-midnight-ink: #151820;
+  --color-midnight-light: #2c3240;
+  --color-soft-white: #F8FAFC;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: #DCE5EC;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom subtle 3D card tilt & shadow effects */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Glass panel styled according to design palette */
+.glass-panel-light {
+  background: rgba(248, 250, 252, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 229, 236, 0.8);
+}
+
+.glass-panel-dark {
+  background: rgba(48, 25, 52, 0.92);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 185, 66, 0.2);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6D4DF;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #301934;
+}
